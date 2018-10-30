@@ -1,0 +1,119 @@
+div.pages_area>div.about_one{
+    display: flex;
+    justify-content: space-between;
+}
+div.about_one>div,div.about_one>img{
+    width: 48%;
+    height: 400px;
+}
+div.about_one div.A_div>h3{
+    font-size: 24px;
+}
+div.about_one div.A_div p+p{
+    margin-top: 20px;
+}
+div.pages_area div+div{
+    margin-top: 100px;
+}
+div.about_two{
+    padding: 80px 10%;
+    background: url(../img/about_04.jpg) no-repeat scroll center;
+    background-size: cover;
+    position: relative;
+}
+div.about_two::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+div.about_two>ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.about_two ul>li{
+    width: 24%;
+    height: 165px;
+    background: rgba(12, 148, 184, 0.7);
+    transform: skewX(-10deg);
+    text-align: center;
+}
+div.about_two ul li>div{
+    width: auto;
+    height: 165px;
+    transform: skewX(10deg);
+}
+div.about_two ul li div>i{
+    font-size: 40px;
+    color: #ffffff;
+    padding-bottom: 10px;
+    display: block;
+    margin-top: 30px;
+}
+div.about_two ul li div>span{
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 30px;
+}
+div.about_two ul li div>p{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+div.section_title{
+    margin: 0 8% 0 100px;
+    height: 20%;
+}
+div.section_title{
+    text-align: center;
+}
+div.section_title h2{
+    display: inline-block;
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 36px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+div.section_title h2 span{
+    color: #0C94B8;
+}
+div.section_title>h2:after{
+    content: "";
+    width: 3px;
+    height: 50px;
+    background: #0c94b8;
+    position: absolute;
+    right: -25px;
+    transform: skewX(-10deg);
+}
+div.section_title>h2::before{
+    content: "";
+    width: 3px;
+    height: 50px;
+    background: #0C94B8;
+    position: absolute;
+    left: -25px;
+    transform: skewX(-10deg);
+}
+div.section_title>p{
+    margin: 0 auto;
+    font-style: italic;
+    width: 555px;
+    display: block;
+}
+div.homeHead div.navv ul.v_ul a.about,div.homeHead div.navv ul.v_ul a.about+i{
+    color: #0c88a9;
+}

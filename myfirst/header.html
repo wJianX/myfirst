@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta content="width=device-width,initial-scale=1.0" charset="UTF-8">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
+  <script src="js/jquery.min.js"></script>
+  <title></title>
+  <style></style>
+</head>
+<body>
+  <header>
+    <ul class="headu1">
+      <li><p>+099 123 123 123</p></li>
+      <li><p>778760550@qq.com</p></li>
+    </ul>
+    <div class="headd1">
+      <ul>
+        <li><a href=""><span class="fa fa-facebook"></span></a></li>
+        <li><a href=""><span class="fa fa-twitter"></span></a></li>
+        <li><a href=""><span class="fa fa-linkedin"></span></a></li>
+        <li><a href=""><span class="fa fa-dribbble"></span></a></li>
+        <li><a href=""><span class="fa fa-google-plus"></span></a></li>
+      </ul>
+    </div>
+  </header>
+  <nav class="nav">
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.png" alt=""/></a>
+    </div>
+    <div class="navv">
+      <ul class="v_ul">
+        <li>
+          <a href="index.html" class="home">HOME</a>
+          <i class="fa fa-angle-down"></i>
+          <div>
+            <ul>
+              <li><a href="#">HOME ONE</a></li>
+              <li><a href="#">HOME TWO</a></li>
+              <li><a href="#">HOME THREE</a></li>
+              <li><a href="#">HOME FOUR</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="about.html" class="about">ABOUT</a></li>
+        <li>
+          <a href="">PORTFOLIO</a>
+          <i class="fa fa-angle-down"></i>
+          <div>
+            <ul>
+              <li><a href="#">PORTFOLIO GRID3</a></li>
+              <li><a href="#">PORTFOLIO GRID4</a></li>
+              <li><a href="#">PORTFOLIO GRID5</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="blog.html" class="blog">BLOG</a>
+          <i class="fa fa-angle-down"></i>
+          <div>
+            <ul>
+              <li><a href="#">BLOG GRID3</a></li>
+              <li><a href="#">BLOG GRID4</a></li>
+              <li><a href="#">BLOG GRID5</a></li>
+              <li><a href="#">BLOG GRID6</a></li>
+              <li><a href="#">BLOG GRID7</a></li>
+              <li><a href="#">BLOG GRID8</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="pages.html" class="pages">PAGES</a>
+          <i class="fa fa-angle-down"></i>
+          <div>
+            <ul>
+              <li><a href="#">PAGES GRID3</a></li>
+              <li><a href="#">PAGES GRID4</a></li>
+              <li><a href="#">PAGES GRID5</a></li>
+              <li><a href="#">PAGES GRID6</a></li>
+              <li><a href="#">PAGES GRID7</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="elements.html" class="elements">ELEMENTS</a>
+          <i class="fa fa-angle-down"></i>
+          <div style="width: 1000px;height: auto;left: -860px;" class="elements_hover">
+            <div>
+              <ul>
+                <li><a href="#">ACCORDION</a></li>
+                <li><a href="#">BUTTON</a></li>
+                <li><a href="#">CLIENTS</a></li>
+                <li><a href="#">PRICING</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">TABLES</a></li>
+                <li><a href="#">TABS</a></li>
+                <li><a href="#">TEAM</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li><a href="#">TESTIMONIAL</a></li>
+                <li><a href="#">TIMELINE</a></li>
+                <li><a href="#">SEPARATOR</a></li>
+                <li><a href="#">PROMOBOX</a></li>
+              </ul>
+            </div>
+            <div><img src="img/nav-img.jpg" alt=""></div>
+          </div>
+        </li>
+        <li><a href="" class="contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <script>
+    $(function () {
+        var navH=$(".nav").offset().top;
+        $(window).scroll(function () {
+            var scroH=$(this).scrollTop();
+            if(scroH>=navH){
+              $(".nav").css({"position":"fixed","top":0,"z-index":10000,"background-color":"while"});
+            }else if(scroH<navH){
+              $(".nav").css({"position":"static"});
+            }
+      })
+    })
+  </script>
+</body>
+</html>
